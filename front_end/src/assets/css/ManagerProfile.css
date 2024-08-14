@@ -1,0 +1,103 @@
+.manager-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 20%;
+    background-color: white;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        
+  }
+
+  .manager-profile-header{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: -800px;
+    /* padding: 20px; */
+  }
+
+  
+
+  .edit {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px;
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+  
+  .edit:hover {
+    filter: invert(60%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(80%) contrast(80%);
+  }
+
+  .edit-btn{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: 25px;
+  }
+  
+  .manager-profile h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .input-box-profile{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 98%;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+  
+  .manager-details, .company-details {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin-bottom: 20px;
+    align-items: left;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: left;
+  }
+  
+  .manager-details h3, .company-details h3 {
+    margin-bottom: 15px;
+  }
+  
+  .manager-details p, .company-details p {
+    margin-bottom: 10px;
+  }
+
+  .save-btn-profile{
+    width: 25%;
+    padding: 10px;
+    background-color: #283D3A;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+
+  .save-btn-profile:hover{
+    background-color: #00C9B5;
+  }
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .manager-profile {
+      padding: 15px;
+    }
+  
+    .manager-details, .company-details {
+      padding: 15px;
+      max-width: 100%;
+    }
+  }
+  

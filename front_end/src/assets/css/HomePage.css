@@ -1,0 +1,117 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Home Component Styles */
+.Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+  ), url('../images/shop2.jpeg') center/cover no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay to ensure text visibility over the background image */
+.Home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 1;
+}
+
+.Home-header {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section {
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the heading bold */
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5; /* Improve readability with line-height */
+}
+
+.join-us {
+  background-color: #ff6347;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block; /* Ensure it fits the content */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.join-us:hover {
+  background-color: #e55347; /* Slightly darker color on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    margin-left: 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .join-us {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    margin-left: 5px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 0.9rem;
+  }
+
+  .join-us {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

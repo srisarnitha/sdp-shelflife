@@ -1,0 +1,96 @@
+/* Features Component Styles */
+.features-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #f4f4f4; /* Light background to make cards pop */
+}
+
+.features-container h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure all cards stay in one row */
+  overflow-x: auto; /* Allow horizontal scrolling if cards overflow */
+  gap: 20px; /* Space between cards */
+  padding: 10px; /* Add padding to avoid clipping */
+  justify-content: center; /* Center the cards in the row */
+}
+
+.feature-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Fixed width for consistency */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 8px;
+}
+
+.feature-card h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.feature-card p {
+  margin-top: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .features-grid {
+    /* Optionally adjust for medium screens if needed */
+  }
+
+  .feature-card {
+    width: 200px; /* Slightly smaller width to fit more cards in a row */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 180px; /* Smaller width for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-container {
+    padding: 20px;
+  }
+
+  .features-container h2 {
+    font-size: 28px;
+  }
+
+  .feature-card {
+    width: 150px; /* Further reduce width for small screens */
+  }
+
+  .feature-card h3 {
+    font-size: 20px;
+  }
+
+  .feature-card p {
+    font-size: 16px;
+  }
+}

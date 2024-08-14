@@ -1,0 +1,123 @@
+.product-table-st {
+  margin: 20px;
+  border-collapse: collapse;
+  width: 95%;
+  /* margin-top: 150px */
+}
+
+.table-header-cell {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink1 {
+  0% { opacity: 0.25; }
+  50% { opacity: 1; }
+  100% { opacity: 0.25; }
+}
+
+
+
+.expiry-warning{
+  background-color: rgb(196, 14, 14);
+  color: white;
+}
+
+.expiry-warning-rec{
+  background-color: rgb(196, 14, 14);
+  color: white;
+  animation: blink 1s infinite;
+}
+
+.low-stock{
+  color: rgb(255, 0, 0);
+}
+
+.low-stock-rec{
+  color: rgb(255, 0, 0);
+  animation: blink1 1s infinite;
+}
+
+
+.table-data-cell input{
+  width: 140px;
+}
+
+.table-data-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.alternate-row {
+  background-color: #f2f2f2;
+}
+
+.update-button {
+  background-color:black;
+  color: #fff;
+  border: black;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.remove-button {
+  background-color: black;
+  color: #fff;
+  border: black;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.update-button:hover, .remove-button:hover {
+  background-color: #00C9B5;
+}
+
+.header-table-st{
+  text-align: left;
+  padding-left: 25px;
+  color: black;
+  margin-top: 100px;
+}
+
+.add-button {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: #283D3A;
+  color: white;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+  border-radius: 3px;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+.add-button:hover{
+  background-color: #00C9B5;
+}
+
+
+
+@media (max-width: 768px) {
+  .product-table {
+    font-size: 14px;
+  }
+  .table-data-cell {
+    padding: 5px;
+  }
+  .update-button, .remove-button {
+    padding: 3px 5px;
+    font-size: 14px;
+  }
+}

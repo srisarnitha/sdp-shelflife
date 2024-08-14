@@ -1,0 +1,111 @@
+/* SignUpPage.css */
+.form-container-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url('../images/backk.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  margin: 0; /* Remove margin to avoid positioning issues */
+}
+
+.sign-up-form {
+  background: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+.sign-up-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.form-group-s {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group-s input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: medium;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+}
+
+.form-group-s input:focus {
+  border-color: #00C9B5;
+}
+
+.form-group-s.full-width {
+  text-align: center;
+}
+
+.form-group-s button {
+  width: 100%;
+  padding: 10px;
+  background-color: #283D3A;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: medium;
+  transition: background-color 0.3s ease;
+}
+
+.form-group-s button:hover {
+  background-color: #00C9B5;
+}
+
+.form-group-s p {
+  margin-top: 10px;
+  font-size: medium;
+  color: #333;
+}
+
+.form-group-s a {
+  color: #00C9B5;
+  text-decoration: none;
+}
+
+.form-group-s a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sign-up-form {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .form-group-s {
+    margin-bottom: 10px;
+  }
+
+  .sign-up-form h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-up-form h2 {
+    font-size: 1.5em;
+  }
+
+  .form-group-s input,
+  .form-group-s button {
+    padding: 8px;
+  }
+}

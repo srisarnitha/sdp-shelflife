@@ -1,0 +1,112 @@
+/* LoginPage.css */
+.form-container-login {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  padding: 30px;
+  background-image: url('../images/backk.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0; /* Remove margin to avoid positioning issues */
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  margin: 0;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.form-group-l {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group-l input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: medium;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent input background */
+}
+
+.form-group-l input:focus {
+  border-color: #00C9B5;
+}
+
+.form-group-l.full-width {
+  text-align: center;
+}
+
+.form-group-l button {
+  width: 100%;
+  padding: 10px;
+  background-color: #283D3A;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: medium;
+  transition: background-color 0.3s ease;
+}
+
+.form-group-l button:hover {
+  background-color: #00C9B5;
+}
+
+.form-group-l p {
+  margin-top: 10px;
+  font-size: medium;
+  color: #333;
+}
+
+.form-group-l a {
+  color: #00C9B5;
+  text-decoration: none;
+}
+
+.form-group-l a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .form-group-l {
+    margin-bottom: 10px;
+  }
+
+  .login-form h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form h1 {
+    font-size: 1.5em;
+  }
+
+  .form-group-l input,
+  .form-group-l button {
+    padding: 10px;
+  }
+}

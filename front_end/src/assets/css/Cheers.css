@@ -1,0 +1,105 @@
+/* Cheers Component Styles */
+.Cheers {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff; /* Set background color to white */
+  color: #333; /* Change text color for better contrast on white background */
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: if you still want some overlay effect */
+.Cheers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Remove overlay or adjust opacity if needed */
+  z-index: -1;
+}
+
+.Cheers h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #333; /* Adjust heading color for better visibility */
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly off-white card background */
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.review-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.review-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.review-card p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    width: 90%;
+  }
+
+  .Cheers h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .Cheers {
+    padding: 20px;
+  }
+
+  .Cheers h1 {
+    font-size: 2em;
+  }
+
+  .review-card {
+    width: 100%;
+  }
+
+  .review-card h3 {
+    font-size: 1.3em;
+  }
+
+  .review-card p {
+    font-size: 1em;
+  }
+}
